@@ -1,0 +1,8 @@
+dms/gui/MovieFormDialog.class
+dms/dao/MysqlMovieDao.class
+dms/gui/MovieTableFrameMysql$1.class
+dms/model/Movie.class
+dms/gui/MovieTableFrameMysql.class
+dms/app/GuiMainMysql.class
+dms/service/MovieService.class
+dms/dao/MovieDao.class
