@@ -14,14 +14,14 @@
 /*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
 /*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
 /*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
-SET @MYSQLDUMP_TEMP_LOG_BIN = @@SESSION.SQL_LOG_BIN;
-SET @@SESSION.SQL_LOG_BIN= 0;
 
 --
--- GTID state at the beginning of the backup 
+-- Current Database: `dms_movies`
 --
 
-SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ 'ee12347e-b531-11f0-b2a6-5b99eedf9034:1-47';
+CREATE DATABASE /*!32312 IF NOT EXISTS*/ `dms_movies` /*!40100 DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci */ /*!80016 DEFAULT ENCRYPTION='N' */;
+
+USE `dms_movies`;
 
 --
 -- Table structure for table `movies`
@@ -44,7 +44,24 @@ CREATE TABLE `movies` (
   CONSTRAINT `chk_release_year` CHECK ((`release_year` between 1888 and 2100))
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
-SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
+
+--
+-- Dumping data for table `movies`
+--
+
+LOCK TABLES `movies` WRITE;
+/*!40000 ALTER TABLE `movies` DISABLE KEYS */;
+INSERT INTO `movies` VALUES ('AVA2015','Avatar','James Cameron',2009,162,'Science Fiction',8),('AVA2022','Avatar: The Way of Water','James Cameron',2022,192,'Science Fiction',7.6),('DKN2008','The Dark Knight','Christopher Nolan',2008,152,'Action',9),('FOR1994','Forrest Gump','Robert Zemeckis',1994,142,'Drama',8.8),('FUR2015','Mad Max: Fury Road','George Miller',2015,120,'Action',8.1),('GLA2000','Gladiator','Ridley Scott',2000,155,'Action',8.5),('GOD1972','The Godfather','Francis Ford Coppola',1972,175,'Crime',9.2),('GUA2014','Guardians of the Galaxy','James Gunn',2014,121,'Action',8),('INT2010','Inception','Christopher Nolan',2010,148,'Science Fiction',9),('JUR1993','Jurassic Park','Steven Spielberg',1993,127,'Adventure',8.2),('LOT2001','The Fellowship of the Ring','Peter Jackson',2001,178,'Fantasy',8.8),('LOT2002','The Two Towers','Peter Jackson',2002,179,'Fantasy',8.7),('LOT2003','The Return of the King','Peter Jackson',2003,201,'Fantasy',9),('MAT1999','The Matrix','Lana Wachowski, Lilly Wachowski',1999,136,'Science Fiction',8.7),('PAR2019','Parasite','Bong Joon-ho',2019,132,'Thriller',8.6),('PUL1994','Pulp Fiction','Quentin Tarantino',1994,154,'Crime',8.9),('SCH1993','Schindler\'s List','Steven Spielberg',1993,195,'Drama',9),('STA1977','Star Wars: A New Hope','George Lucas',1977,121,'Science Fiction',8.6),('TIT1997','Titanic','James Cameron',1997,195,'Romance',7.9),('WHI2014','Whiplash','Damien Chazelle',2014,106,'Drama',8.5);
+/*!40000 ALTER TABLE `movies` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Dumping events for database 'dms_movies'
+--
+
+--
+-- Dumping routines for database 'dms_movies'
+--
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 
 /*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
@@ -55,4 +72,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2025-11-03  0:20:35
+-- Dump completed on 2025-11-03  0:20:21
