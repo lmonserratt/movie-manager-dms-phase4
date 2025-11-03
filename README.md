@@ -139,7 +139,7 @@ Ensures safe DB connection handling (connect, close, and isConnected methods).
 
 📸 Demonstration Video
 
-🎥 Watch the Final Phase 4 Video Presentation on YouTube
+🎥 [Watch the Final Phase 4 Video Presentation on YouTube](https://youtu.be/G01ehAZjiaY)
 
 
 📚 Acknowledgments
