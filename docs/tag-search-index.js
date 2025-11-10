@@ -1,1 +1,1 @@
-tagSearchIndex = [{"l":"Serialized Form","h":"","k":"18","u":"serialized-form.html"}];updateSearchResults();
+tagSearchIndex = [{"l":"Serialized Form","h":"","k":"18","u":"serialized-form.html"},{"l":"Usage","h":"class dms.dao.MysqlMovieDao","k":"16","u":"dms/dao/MysqlMovieDao.html#usage-heading"}];updateSearchResults();
